@@ -1,0 +1,32 @@
+{
+  "allowedCommands": ["bun", "npm", "npx", "node", "git", "python", "pip", "cargo", "make"],
+  "conversationAuthToken": null,
+  "port": 3000,
+  "fullAccess": true,
+  "multiProject": true,
+  "worktrees": { "mode": "never" },
+  "exec": {
+    "mode": "unrestricted",
+    "extraAllowedCommands": ["ls", "cat", "grep", "find", "head", "tail", "wc", "echo", "pwd", "which", "rg", "sed", "awk", "sort", "uniq", "diff", "true", "false"],
+    "maxSessions": 320,
+    "idleTimeoutMs": 18000000
+  },
+  "command": { "defaultTimeout": 30000, "maxTimeout": 6000000 },
+  "projectCloneDir": ".",
+  "openaiTunnel": {
+    "tunnelId": "tunnel_6aafa8588c1c81918eba3add10643902",
+    "apiKeyRef": "__API_KEY_REF__"
+  },
+  "mcpServers": {
+    "ue-mcp": {
+      "type": "stdio",
+      "command": "__NPX_PATH__",
+      "args": ["--yes", "ue-mcp@1.3.8", "__UE_PROJECT__"],
+      "cwd": "__UE_PROJECT_DIR__",
+      "mode": "direct",
+      "startupTimeoutSec": 60,
+      "toolTimeoutSec": 300,
+      "disabled": "__UE_DISABLED__"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+# Rust build output. Keep only the exact release binary used by
+# start-chatgpt-tunnel.bat so a fresh clone can start without rebuilding.
+/target/*
+!/target/release/
+/target/release/*
+!/target/release/codex-free.exe
+/target-*
+
+# Local build artifacts
+*.exe
+!/target/release/codex-free.exe
+!/portable-package/codex-free.exe
+/codex-free
+/codex-free
+
+# Leftovers from the previous Bun/TypeScript build
+node_modules/
+__pycache__/
+*.pyc
+/codex-agent-bridge/logs/
+
+# Source archive drops (reference material, not part of the repo)
+*.zip
+openai-runtime-api-key.txt

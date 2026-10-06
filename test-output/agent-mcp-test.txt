@@ -1,0 +1,11 @@
+Codex Free agent MCP test
+Execution time UTC: 2026-09-21 03:14:26
+Working directory: D:\codex-free-master\.
+Environment: Windows x64, win32, PowerShell.
+MCP detected: node_repl online, rmcp 1.5.0, stdio, 4 tools.
+Result: get_agent_brief, environment, listing, and requested files were checked.
+Git result: not a Git repository; branch and file status unavailable.
+Filename search: config/mcp/start patterns found 8 unique paths.
+Upstream check: node_repl/js called successfully with isError=false; read-only annotation verified.
+Shell result: exact Get-Location/Get-Date was blocked by the allowlist; Python timestamp fallback succeeded.
+Tool call confirmation: get_agent_brief was actually called.

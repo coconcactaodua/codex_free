@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "codex": {
+      "name": "Codex Free native tools",
+      "kind": "codex-free",
+      "command": "D:\\codex-free-master\\target\\release\\codex-free.exe",
+      "args": [
+        "--stdio",
+        "--config",
+        "D:\\codex-free-master\\codex.config.json",
+        "--work-dir",
+        "D:\\codex-free-master\\."
+      ],
+      "enabled": true,
+      "toolkit": {
+        "name": "Codex Free batch toolkit",
+        "purpose": "Inspect, edit, verify and run commands in the active project.",
+        "rules": [
+          "Use the exact live tool schema.",
+          "Inspect before changing and verify after changing.",
+          "Keep related work inside the current batch and leave a checkpoint."
+        ]
+      }
+    }
+  }
+}
